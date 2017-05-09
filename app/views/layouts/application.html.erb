@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>LandingPage</title>
+    <title>Roberto Pesce | UX Designer | About Users</title>
+    
+    <meta name="description" content="Roberto Pesce is a UX Designer, usability specialist living in San Diego, CA." />
+    <meta name="viewport" content="width=380, user-scalable=no" />
+
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +13,8 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
