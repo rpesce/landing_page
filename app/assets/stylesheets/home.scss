@@ -47,6 +47,17 @@ header {
 	margin: auto;
 }
 
+a {
+  color: #56BF81;
+
+  &:visited {
+    color: #666;
+  }
+
+  &:hover {
+    color: #666;
+  }
+}
 
 /* HEADER */
 
@@ -245,11 +256,14 @@ iframe {
 	width: 100%;
 }
 
+.projetos a {
+}
+
 .item {
 	margin: 0 !important;
 	padding: 0 !important;
 	width: 33%;
-	display: inline-block;
+	display: inline;
 	background-color: #e2e2e2;
 }
 
@@ -313,6 +327,32 @@ iframe {
 	color: #fff;
 	/*border: 1px solid yellow;*/
 
+}
+
+.sobre-design ul {
+	list-style-type: none;
+	margin-top: 1.8em;
+	padding: 0;
+	text-transform: uppercase;
+	color: #fff;
+	text-align: left;
+}
+
+.sobre-design li {
+	padding: .2em 0;
+}
+
+.sobre-design a {
+  color: #fff;
+
+  &:visited {
+    color: #fff;
+  }
+
+  &:hover {
+    color: #666;
+    text-decoration: underline;
+  }
 }
 
 
