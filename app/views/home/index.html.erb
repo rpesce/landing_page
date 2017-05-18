@@ -1,7 +1,7 @@
 <header class="wrapper">
 	<h1>Roberto Pesce</h1>
 	<p> 
-		UX Designer, frontend developer, criador do projeto <b><a href="http://aboutusers.com">100 Days Challenge About Users</a></b> e fundador do site <b><a href="http://aboutusers.com">AboutUsers.com</a></b>. Também escrevo no <b><a href="https://medium.com/@robertopesce">Medium</a></b> sobre UX Design e estou escrevendo o EBook “UX: a minha experiência como usuário”. Vivo atualmente em San Diego, California.
+		UX Designer, front-end developer, criador do projeto <b><a href="http://aboutusers.com">100 Days Challenge About Users</a></b> e fundador do site <b><a href="http://aboutusers.com">AboutUsers.com</a></b>. Também escrevo no <b><a href="https://medium.com/@robertopesce">Medium</a></b> sobre UX Design e estou escrevendo o EBook “UX: a minha experiência como usuário”. Vivo atualmente em San Diego, California.
 	</p>
 </header>
 
@@ -9,15 +9,15 @@
 
 <section class="wrapper video">
 	<div class="width-center-wrap">
-		<h3>Chegou até aqui? Fico feliz em saber que esteja interessado em UX Design!</h3>
+		<h3><span>Chegou até aqui?</span> <br /> Fico feliz em saber que esteja interessado em UX Design!</h3>
 		<p>
-			Te convido a assistir o vídeo abaixo para conhecer um pouco mais sobre o assunto. É rápido e, no vídeo eu falo um pouco mais sobre o processo, algumas metodologias e, claro, como usar tudo isso na sua empresa.
+			Assista o v&iacute;deo abaixo onde explico o processo de UX, algumas metodologias e principalmente como o Design Centrado no Usuário - <i>user centered design</i> - fortalece seu produto, sua marca e seus resultados.
 		</p>
 
-		<iframe width="752" height="470" src="https://www.youtube.com/embed/7NHiyJ_GYss?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen>
+		<iframe width="686" height="353" src="https://www.youtube.com/embed/7NHiyJ_GYss?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen>
 		</iframe>
 		<br />
-		<a href="">Baixe a apresentação PDF aqui!</a>
+		<a href="">Baixar material (PDF)</a>
 	</div>
 </section>
 
@@ -25,17 +25,18 @@
 
 <section class="wrapper form">
 	<div class="width-center-wrap">
-		<h3>Quer saber mais sobre UX e como utiliz&aacute;-lo para melhorar seus resultados?</h3>
+		<h3>Gostou do que viu? <br /> Quer adotar o UX Design para melhorar seus resultados?</h3>
 		<p>
-			Informe seu nome e email que eu entrarei em contato!
+			Entre em contato e vamos conversar!
 		</p>
+
 		<div class="formulario">
 			<%= form_for @email, :url => emails_path, :html => {:method => :post} do |f| %>
 				<% f.label :name %>
 				<%= f.text_field :name, autofocus: true, placeholder: 'Nome', id: 'nome' %>
 				<% f.label :email %>
 				<%= f.text_field :email, autofocus: true, placeholder: 'Email', id: 'email' %>
-				<%= f.submit 'ENTRAR EM CONTATO!', class: 'botao' %>
+				<%= f.submit 'ENVIAR', class: 'botao' %>
 			<% end %>
 		</div>
 	</div>
@@ -47,7 +48,7 @@
 	<div class="bloco">
 		<div class="flex">
 			<hr>
-			<h4>UM POUCO MAIS SOBRE MIM E MEUS PROJETOS</h4>
+			<h4>UM POUCO SOBRE MIM E MEUS PROJETOS</h4>
 			<%= link_to image_tag("behance.svg", :alt => "Behance Portfolio", :class => "img-size"), "http://behance.net/robertopesce" %><br />
 			<%= link_to image_tag("linkedin.png", :alt => "LinkedIn Profile", :class => "img-size"), "https://www.linkedin.com/in/roberto-pesce-jr-00746249/" %><br />
 			<%= link_to image_tag("medium.svg", :alt => "Medium Page", :class => "img-size"), "http://medium.com/@robertopesce" %><br />
@@ -55,16 +56,13 @@
 		</div>
 		<div class="flex2">
 			<p>
-				Sou um UX Designer brasileiro, nascido em Porto Alegre, RS. Fico feliz que você tenha entrado no meu site, pois isso demonstra que temos um interesse em comum: UX Design. Como você já viu no vídeo acima, UX, além de possuir um espaço cada vez maior nas grandes empresas de tecnologia, também pode ser muito útil para ajudar empresas de todo os tamanhos, seja no seu ecommerce, APP ou website.
+				Sou um UX Designer brasileiro, nascido em Porto Alegre, RS. Fico feliz que voc&ecirc; tenha entrado no meu site, pois isso demonstra que temos um interesse em comum: UX Design. Como você j&aacute; viu no v&iacute;deo acima, UX, al&eacute;m de possuir um espaço cada vez maior nas grandes empresas de tecnologia, tamb&eacute;m pode ser muito &uacute;til para ajudar empresas de todo os tamanhos, seja no seu ecommerce, APP, website ou produto.
 			</p>
 			<p>
-				O que mais me motiva neste campo é a imensidão de resultados que podem ser alcançados ao adotar uma metodologia consistente de pesquisa, design, teste e acompanhamento, estabelecendo-se, desta forma, a garantia de resultados consistentes. O processo é muito simples: aprender e aplicar estes aprendizados de forma rápida, durante o processo.
+				O que mais me motiva neste campo &eacute; a imensid&atilde;o de resultados que podem ser alcançados ao adotar-se uma metodologia consistente de pesquisa, design, teste e acompanhamento. Quando o trabalho de UX &eacute; bem feito os resultados são duradouros e resolvem problemas reais de clientes e usuários.
 			</p>
 			<p>
-				Você já deve ter ouvido por ai a frase “Falhar cedo e aprender rápido.” Está muito em alta em locais como o Vale do Silício e eu, como UX Designer, acredito nesta abordagem para tudo na vida, pois a vida é feita de experiências, e quando se está disposto falhar, reconhecer os erros e melhorar, é quando os melhores resultados tendem a aparecer.
-			</p>
-			<p>
-				UX é um campo incrível e muito extenso, escrevo sobre muitos temas no Medium, mas fique à vontade para entrar em contato por email, me visitar no LinkedIn ou conhecer meus projetos no Behance e GitHub.
+				UX é um campo incrível e muito extenso, que possui muito material disponível. Eu mesmo escrevo sobre o tema no Medium e disponibilizo alguns materiais por aqui. Fique à vontade para entrar em contato por email ou me visitar no LinkedIn! Estou sempre disposto a falar sobre esse tema que é minha paixão.
 			</p>
 		</div>
 	</div>
@@ -72,26 +70,9 @@
 
 <br class="clear" />
 
-<section class="wrapper projetos">
-	<a href="http://www.aboutusers.com">
-		<%= image_tag("100_days_challenge.jpg", :alt => "100 Days Challenge", :class => "item") %>
-	</a>
-	<a href="http://www.aboutusers.com">
-		<%= image_tag("about_users.jpg", :alt => "About Users", :class => "item") %>
-	</a>
-	<a href="http://medium.com/@robertopesce">
-		<%= image_tag("Medium.jpg", :alt => "Articles on Medium", :class => "item") %>
-	</a>
-	<a href="https://www.behance.net/gallery/48349003/UX-UI-Mobile-Project-Transform-App">
-		<%= image_tag("transform_app.jpg", :alt => "Transform App", :class => "item") %>
-	</a>
-	<a href="https://www.behance.net/gallery/47207123/UX-UI-Mobile-Project-GastronoRates-App">
-		<%= image_tag("gastronorates.jpg", :alt => "GastronoRates App", :class => "item") %>
-	</a>
-	<a href="https://itunes.apple.com/us/app/brazuka-tickets/id1135394594?mt=8">
-		<%= image_tag("Brazuka.jpg", :alt => "Brazuka Tickets App", :class => "item") %>
-	</a>
-</section>
+<div class="projetos">
+	<%= link_to image_tag("100_days_challenge.jpg", :alt => "100 Days Challenge", :class => "square"), "http://www.aboutusers.com", :target => "_blank"%><%= link_to image_tag("about_users.jpg", :alt => "About Users",  :class => "square"), "http://www.aboutusers.com", :target => "_blank"%><%= link_to image_tag("Medium.jpg", :alt => "Articles on Medium",  :class => "square"), "http://medium.com/@robertopesce", :target => "_blank" %><%= link_to image_tag("transform_app.jpg", :alt => "Transform App",  :class => "square"), "https://www.behance.net/gallery/48349003/UX-UI-Mobile-Project-Transform-App", :target => "_blank" %><%= link_to image_tag("gastronorates.jpg", :alt => "GastronoRates App",  :class => "square"), "https://www.behance.net/gallery/47207123/UX-UI-Mobile-Project-GastronoRates-App", :target => "_blank" %><%= link_to image_tag("Brazuka.jpg", :alt => "Brazuka Tickets App", :class => "square"), "https://itunes.apple.com/us/app/brazuka-tickets/id1135394594?mt=8", :target => "_blank" %>
+</div>
 
 <br class="clear" />
 
