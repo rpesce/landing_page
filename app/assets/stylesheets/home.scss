@@ -143,10 +143,9 @@ iframe {
 }
 
 .video a {
-	font-size: 1em;
+	font-size: 0.8em;
 	color: #fff;
 	text-decoration: underline;
-	letter-spacing: .05em;
 }
 
 
@@ -213,6 +212,13 @@ iframe {
 	border-radius: 3px;
 	padding: 1em .5em;
 	width: 20%;
+
+	&:hover {
+		;
+		background-color: #FCCC33;	
+		border: 1px solid #FCCC33;
+		color: #666;
+	}
 }
 
 
@@ -292,7 +298,13 @@ iframe {
 	width: 33.33%;
 	display: inline-block;
 	margin: 0 0 -0.4em 0 !important;
-	padding: 0 !important;
+	padding: 0 !important;	
+	z-index: -1;
+}
+
+.change {
+	background-color: green;
+	z-index: 1;
 }
 
 

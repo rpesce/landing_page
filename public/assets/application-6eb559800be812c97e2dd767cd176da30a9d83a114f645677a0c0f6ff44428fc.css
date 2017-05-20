@@ -1,0 +1,799 @@
+/* COMMON SETTINGS */
+/* line 4, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  transition: color .15s linear, position .15s linear, background-color .15s linear, opacity .15s linear;
+  -webkit-transition: color .15s linear, position .15s linear, background-color .15s linear, opacity .15s linear;
+}
+
+/* line 13, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+body {
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 19, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+header {
+  width: 70% !important;
+  text-align: left;
+  margin-top: 6em !important;
+}
+
+/* line 25, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.wrapper {
+  width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/* line 31, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.clear {
+  clear: both;
+  display: none;
+}
+
+/* line 36, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.width-center-wrap {
+  text-align: center;
+  width: 70% !important;
+  margin: auto;
+}
+
+/* line 42, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+a {
+  color: #56BF81;
+}
+/* line 45, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+a:visited {
+  color: #666;
+}
+/* line 49, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+a:hover {
+  color: #666;
+}
+
+/* line 54, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 62, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 73, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 80, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* line 85, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+#notice {
+  color: green;
+}
+
+/* HEADER */
+/* line 91, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+header h1 {
+  color: #56BF81;
+  font-size: 4em;
+  font-weight: 600;
+  letter-spacing: .03em;
+  line-height: 1em;
+}
+
+/* line 99, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+header p {
+  font-size: 1.5em;
+  margin-left: 0 !important;
+  color: #4B4B4B;
+  line-height: 1.6em;
+  letter-spacing: 0.04em;
+}
+
+/* line 107, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+header p a {
+  border-bottom: 1px solid #ddd;
+}
+
+/* SECTION - VIDEO */
+/* line 114, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.video {
+  margin-top: 6em;
+  padding: 3em 0;
+  background-color: #56BF81;
+}
+
+/* line 120, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.video h3 {
+  color: #fff;
+  font-size: 2em;
+  font-weight: 650;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+}
+
+/* line 129, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.video p {
+  margin: 1.2em 0 0 0;
+  font-size: 1em;
+  color: #fff;
+  line-height: 1.4em;
+  letter-spacing: 0.03em;
+}
+
+/* line 137, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+iframe {
+  padding: .5em;
+  margin: 2em auto;
+  margin-bottom: 1em;
+  border: none;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* line 146, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.video a {
+  font-size: 1em;
+  color: #fff;
+  text-decoration: underline;
+  letter-spacing: .05em;
+}
+
+/* SECTION - FORM */
+/* line 156, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.form {
+  padding: 2em 0;
+}
+
+/* line 160, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.form h3 {
+  color: #56BF81;
+  font-size: 2em;
+  margin-bottom: .1em;
+  font-weight: 600;
+  line-height: 1.2em;
+  letter-spacing: 0.03em;
+}
+
+/* line 170, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.form p {
+  font-weight: 400;
+  margin: 1em 0 0 0;
+  font-size: 1.5em;
+  color: #4b4b4b;
+  line-height: 1.4em;
+  letter-spacing: 0.03em;
+}
+
+/* line 179, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.formulario {
+  margin-top: 1em;
+  padding: 1em 0;
+  width: 100%;
+  display: inline-block;
+}
+
+/* line 186, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+#nome {
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  padding: 1em .5em;
+  width: 35%;
+}
+
+/* line 193, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+#nome::placeholder {
+  color: #a3a3a3;
+}
+
+/* line 197, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+#email {
+  color: #A3A3A3;
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  padding: 1em .5em;
+  width: 35%;
+}
+
+/* line 205, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+#email::placeholder {
+  color: #a3a3a3;
+}
+
+/* line 209, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.botao {
+  color: #fff;
+  font-weight: 500;
+  border: 1px solid #FCAA00;
+  background-color: #FCAA00;
+  border-radius: 3px;
+  padding: 1em .5em;
+  width: 20%;
+}
+/* line 218, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.botao:hover {
+  background-color: #FCCC33;
+  border: 1px solid #FCCC33;
+  color: #666;
+}
+
+/* SECTION - SOBRE-ROBERTO */
+/* line 229, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-roberto {
+  padding: 4em 0;
+  background-color: #56BF81;
+  /*border: 1px solid black;*/
+}
+
+/* line 236, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.bloco {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  /*border: 1px solid black;*/
+}
+
+/* line 245, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.flex {
+  width: 20%;
+  padding: 0 2em;
+  margin: auto;
+  margin-top: 0 !important;
+  text-align: left;
+}
+
+/* line 253, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.flex2 {
+  width: 70%;
+  padding-top: 0 !important;
+  margin: auto;
+  margin-top: 0 !important;
+  /*border: 1px solid red;*/
+}
+
+/* line 261, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-roberto hr {
+  margin-bottom: 1em;
+  height: .3em;
+  border-width: 0;
+  color: white;
+  background-color: white;
+}
+
+/* line 269, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-roberto h4 {
+  text-align: left;
+  color: #fff;
+  font-size: 2em;
+  line-height: 1.1em;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+/* line 278, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-roberto p {
+  margin: auto !important;
+  padding: 0 !important;
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: #fff;
+  /*border: 1px solid yellow;*/
+}
+
+/* line 289, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.img-size {
+  display: block;
+  max-width: 5.2em;
+  width: 100%;
+  padding: .3em 0;
+}
+
+/* SECTION - PROJETOS */
+/* line 299, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.square {
+  width: 33.33%;
+  display: inline-block;
+  margin: 0 0 -0.4em 0 !important;
+  padding: 0 !important;
+  z-index: -1;
+}
+
+/* line 307, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.change {
+  background-color: green;
+  z-index: 1;
+}
+
+/* SECTION - SOBRE-DESIGN */
+/* line 315, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-design {
+  padding: 2em 0;
+  background-color: #56BF81;
+  /*border: 1px solid black;*/
+}
+
+/* line 322, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.bloco {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  /*border: 1px solid black;*/
+}
+
+/* line 331, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.flex {
+  width: 20%;
+  padding: 0 2em;
+  margin: auto;
+  margin-top: 0 !important;
+  /*border: 1px solid white;*/
+}
+
+/* line 339, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.flex2 {
+  width: 70%;
+  padding-top: 0 !important;
+  margin: auto;
+  margin-top: 0 !important;
+  /*border: 1px solid red;*/
+}
+
+/* line 347, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-design hr {
+  margin-bottom: 2em;
+  height: .3em;
+  border-width: 0;
+  color: white;
+  background-color: white;
+}
+
+/* line 355, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-design h4 {
+  text-align: left;
+  color: #fff;
+  font-size: 2em;
+  line-height: 1.1em;
+  margin-bottom: 1em;
+  font-weight: 500;
+}
+
+/* line 364, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-design p {
+  margin: auto !important;
+  padding: 0 !important;
+  text-align: left;
+  font-size: 1.1em;
+  line-height: 1.5em;
+  color: #fff;
+}
+
+/* line 374, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-design ul {
+  list-style-type: none;
+  margin-top: 1em;
+  margin-left: 0 !important;
+  padding: 0;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: left;
+}
+
+/* line 384, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-design li {
+  margin: 0 0;
+  padding: .2em 0;
+}
+
+/* line 389, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-design a {
+  text-decoration: underline;
+  color: #fff;
+}
+/* line 393, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-design a:visited {
+  color: #fff;
+}
+/* line 397, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+.sobre-design a:hover {
+  color: #666;
+  text-decoration: underline;
+}
+
+/* FOOTER */
+/* line 406, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+footer {
+  margin: 2em auto;
+  text-align: center;
+}
+
+/* BLOCK MEDIA SCREEN */
+@media all and (max-width: 1100px) {
+  /*HEADER*/
+  /* line 418, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  header h1 {
+    font-size: 3.8em;
+    font-weight: 600;
+  }
+
+  /* line 423, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  header p {
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
+
+  /*VIDEO*/
+  /* line 430, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .video h3 {
+    font-size: 1.7em;
+  }
+
+  /* line 434, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .video p {
+    margin: 1em 0 0 0;
+  }
+
+  /* line 438, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  iframe {
+    max-width: 1100px;
+    width: 80%;
+  }
+
+  /*FORM*/
+  /* line 445, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .form h3 {
+    font-size: 1.7em;
+  }
+
+  /* line 449, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .form p {
+    margin: 1em 0 0 0;
+    font-size: 1.3em;
+  }
+
+  /* line 454, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .formulario {
+    margin-top: 0.2em;
+  }
+}
+@media all and (max-width: 960px) {
+  /*HEADER*/
+  /* line 464, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  header h1 {
+    font-size: 3.5em;
+    font-weight: 600;
+  }
+
+  /* line 469, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  header p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+  }
+
+  /*VIDEO*/
+  /* line 476, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .video h3 {
+    font-size: 1.5em;
+  }
+
+  /* line 480, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .video p {
+    font-size: 0.9em;
+    margin: 1em 0 0 0;
+  }
+
+  /* line 485, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  iframe {
+    max-width: 1100px;
+    width: 80%;
+  }
+
+  /*FORM*/
+  /* line 492, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .form h3 {
+    font-size: 1.5em;
+  }
+
+  /* line 496, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .form p {
+    margin: 1em 0 0 0;
+    font-size: 1.2em;
+  }
+
+  /*SOBRE-ROBERTO*/
+  /* line 504, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .sobre-roberto hr {
+    height: .2em;
+  }
+
+  /* line 508, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .sobre-roberto h4 {
+    font-size: 1.8em;
+    line-height: 1.1em;
+  }
+
+  /* line 513, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .sobre-roberto p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  /* SECTION - PROJETOS*/
+  /* line 520, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .square {
+    width: 50%;
+  }
+
+  /*SOBRE-DESIGN*/
+  /* line 526, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .sobre-design hr {
+    height: .2em;
+  }
+
+  /* line 530, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .sobre-design h4 {
+    font-size: 1.8em;
+    line-height: 1.1em;
+  }
+
+  /* line 535, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .sobre-design p {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+@media all and (max-width: 850px) {
+  /* line 544, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  header {
+    width: 80% !important;
+  }
+
+  /* line 548, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .width-center-wrap {
+    width: 80% !important;
+  }
+
+  /*HEADER*/
+  /* line 554, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  header h1 {
+    font-size: 3em;
+  }
+
+  /* line 558, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  header p {
+    font-size: 1.1em;
+    line-height: 1.6em;
+  }
+
+  /*VIDEO*/
+  /* line 566, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .video h3 {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+
+  /* line 572, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .video p {
+    font-size: 0.9em;
+  }
+
+  /* line 576, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .video a {
+    font-size: 0.8em;
+    letter-spacing: .04em;
+  }
+
+  /*FORM*/
+  /* line 583, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .form h3 {
+    font-size: 1.3em;
+  }
+
+  /* line 587, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .form p {
+    font-size: 1.1em;
+  }
+
+  /* line 591, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  #nome {
+    width: 46%;
+  }
+
+  /* line 595, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  #email {
+    width: 46%;
+  }
+
+  /* line 599, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .botao {
+    margin-top: 0.7em;
+    width: 80%;
+  }
+
+  /*SOBRE-ROBERTO*/
+  /* line 606, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .sobre-roberto h4 {
+    font-size: 1.4em;
+  }
+
+  /*SOBRE-DESIGN*/
+  /* line 612, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .sobre-design h4 {
+    font-size: 1.4em;
+  }
+}
+@media all and (max-width: 600px) {
+  /*VIDEO*/
+  /* line 621, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .video h3 {
+    font-size: 1.3em;
+    line-height: 1.25em;
+  }
+
+  /* line 627, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .video p {
+    font-size: 0.9em;
+  }
+
+  /* line 631, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .video a {
+    font-size: 0.8em;
+    letter-spacing: .04em;
+  }
+
+  /*FORM*/
+  /* line 638, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .form h3 {
+    font-size: 1.3em;
+  }
+
+  /* line 642, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .form p {
+    font-size: 0.9em;
+  }
+
+  /* line 646, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  #nome {
+    width: 100%;
+    margin-top: 0.7em;
+  }
+
+  /* line 651, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  #email {
+    width: 100%;
+    margin-top: 0.7em;
+  }
+
+  /*SOBRE-ROBERTO */
+  /* line 658, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .bloco {
+    display: block;
+  }
+
+  /* line 662, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .flex {
+    width: 100%;
+    text-align: center;
+    padding: 0 !important;
+  }
+
+  /* line 668, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .flex2 {
+    width: 100%;
+  }
+
+  /* line 672, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .sobre-roberto h4 {
+    text-align: left;
+    font-size: 1.4em;
+    line-height: 1.1em;
+    margin-bottom: 1em;
+    font-weight: 500;
+  }
+
+  /* line 680, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .sobre-roberto p {
+    font-size: 0.9em;
+    line-height: 1.6em;
+    letter-spacing: .035em;
+    /*border: 1px solid yellow;*/
+  }
+
+  /* line 688, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .img-size {
+    display: none;
+  }
+
+  /*PROJETOS*/
+  /* line 694, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .square {
+    width: 100%;
+    display: block;
+  }
+
+  /*SOBRE-DESIGN*/
+  /* line 701, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/home.scss */
+  .sobre-design h4 {
+    font-size: 1.4em;
+  }
+}
+/* line 1, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/scaffolds.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  margin: 33px;
+}
+
+/* line 8, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/scaffolds.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+/* line 14, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/scaffolds.scss */
+th {
+  padding-bottom: 5px;
+}
+
+/* line 18, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/scaffolds.scss */
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* line 24, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/scaffolds.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 30, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/scaffolds.scss */
+label {
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+

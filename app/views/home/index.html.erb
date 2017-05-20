@@ -1,7 +1,7 @@
 <header class="wrapper">
 	<h1>Roberto Pesce</h1>
 	<p> 
-		UX Designer, frontend developer, criador do projeto <b><a href="http://aboutusers.com">100 Days Challenge About Users</a></b> e fundador do site <b><a href="http://aboutusers.com">AboutUsers.com</a></b>. Também escrevo no <b><a href="https://medium.com/@robertopesce">Medium</a></b> sobre UX Design e estou escrevendo o EBook “UX: a minha experiência como usuário”. Vivo atualmente em San Diego, California.
+		UX Designer, frontend developer, criador do projeto <b><%= link_to "100 Days Challenge About Users", "http://aboutusers.com", :target => "_blank" %></b> e fundador do site <b><%= link_to "About Users", "http://aboutusers.com", :target => "_blank" %></b>. Também escrevo no <b><%= link_to "Medium", "https://medium.com/@robertopesce", :target => "_blank" %></b> sobre UX Design e estou escrevendo o EBook “UX: a minha experiência como usuário”. Vivo atualmente em San Diego, California.
 	</p>
 </header>
 
@@ -17,7 +17,9 @@
 		<iframe width="686" height="353" src="https://www.youtube.com/embed/7NHiyJ_GYss?rel=0&amp;controls=0&amp;showinfo=0" allowfullscreen>
 		</iframe>
 		<br />
-		<a href="">Baixar material (PDF)</a>
+		
+		<%= link_to "Baixar PDF", asset_path("Roberto_Pesce.pdf"), :target => "_blank" %>
+
 	</div>
 </section>
 
@@ -25,7 +27,7 @@
 
 <section class="wrapper form">
 	<div class="width-center-wrap">
-		<h3>Gostou do que viu? <br /> Quer adotar o UX Design para melhorar seus resultados?</h3>
+		<h3>Gostou do que viu? <br /> Quer melhorar seus resultados atrav&eacute;s do UX Design?</h3>
 		<p>
 			Entre em contato e vamos conversar!
 		</p>
@@ -71,7 +73,7 @@
 <br class="clear" />
 
 <div class="projetos">
-	<%= link_to image_tag("100_days_challenge.jpg", :alt => "100 Days Challenge", :class => "square"), "http://www.aboutusers.com", :target => "_blank"%><%= link_to image_tag("about_users.jpg", :alt => "About Users",  :class => "square"), "http://www.aboutusers.com", :target => "_blank"%><%= link_to image_tag("Medium.jpg", :alt => "Articles on Medium",  :class => "square"), "http://medium.com/@robertopesce", :target => "_blank" %><%= link_to image_tag("transform_app.jpg", :alt => "Transform App",  :class => "square"), "https://www.behance.net/gallery/48349003/UX-UI-Mobile-Project-Transform-App", :target => "_blank" %><%= link_to image_tag("gastronorates.jpg", :alt => "GastronoRates App",  :class => "square"), "https://www.behance.net/gallery/47207123/UX-UI-Mobile-Project-GastronoRates-App", :target => "_blank" %><%= link_to image_tag("Brazuka.jpg", :alt => "Brazuka Tickets App", :class => "square"), "https://itunes.apple.com/us/app/brazuka-tickets/id1135394594?mt=8", :target => "_blank" %>
+	<%= link_to image_tag("100_days_challenge.jpg", :alt => "100 Days Challenge", :class => "square"), "http://www.aboutusers.com", :target => "_blank"%><%= link_to image_tag("about_users.jpg", :alt => "About Users",  :class => "square"), "http://www.aboutusers.com", :target => "_blank"%><%= link_to image_tag("Medium.jpg", :alt => "Articles on Medium",  :class => "square"), "http://medium.com/@robertopesce", :target => "_blank" %><%= link_to image_tag("transform_app.jpg", :alt => "Transform App",  :class => "square change"), "https://www.behance.net/gallery/48349003/UX-UI-Mobile-Project-Transform-App", :target => "_blank" %><%= link_to image_tag("gastronorates.jpg", :alt => "GastronoRates App",  :class => "square change"), "https://www.behance.net/gallery/47207123/UX-UI-Mobile-Project-GastronoRates-App", :target => "_blank" %><%= link_to image_tag("Brazuka.jpg", :alt => "Brazuka Tickets App", :class => "square change"), "https://itunes.apple.com/us/app/brazuka-tickets/id1135394594?mt=8", :target => "_blank" %>
 </div>
 
 <br class="clear" />
