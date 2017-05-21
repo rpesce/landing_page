@@ -1,5 +1,6 @@
 class EmailsController < ApplicationController
   before_action :set_email, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, only: [:new, :create]
 
   # GET /emails
   # GET /emails.json
@@ -28,8 +29,8 @@ class EmailsController < ApplicationController
 
     respond_to do |format|
       if @email.save
-        format.html { redirect_to @email, notice: 'Email was successfully created.' }
-        format.json { render :show, status: :created, location: @email }
+        format.html { render :new, notice: 'Contato recebido com sucesso! Em breve você receberá um email com mais informações.' }
+        format.json { render :index, status: :created, location: @email }
       else
         format.html { render :new }
         format.json { render json: @email.errors, status: :unprocessable_entity }
