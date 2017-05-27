@@ -1,3 +1,67 @@
-<p id="notice"><%= notice %></p>
+<header class="wrapper">
+	<h1>Obrigado pelo seu contato!</h1>
+	<p> 
+		Voc&ecirc; deu o primeiro passo para deixar seus clientes e usu&aacute;rios muito mais satisfeitos. Verifique sua caixa de emails para os pr&oacute;ximos passos.
+	</p>
 
-<h1>fff</h1>
+	<div class="width-center-wrap oi">
+		<%= link_to "Voltar", root_path, :class => "botao_2" %>
+	</div>
+</header>
+
+<section class="wrapper sobre-design">
+	<div class="bloco">
+		<div class="flex">
+		<hr>
+			<h4>ENQUANTO ISSO, UM POUCO MAIS DE UX DESIGN</h4>
+		</div>
+		<div class="flex2">
+			<p>
+				Enquanto voc&ecirc; não checa sua caixa de emails aproveito para compartilhar alguns artigos sobre UX que podem ajudar voc&ecirc; a entender como esta filosofia potencializa seus resultados.
+			</p>
+			<table>
+				<tr>
+					<td>
+						<ul>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+						</ul>
+					</td>
+					<td>
+						<ul>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+							<li><%= link_to "Artigo 1", "www.internacional.com.br", target: "_blank"%></li>
+						</ul>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</section>
+
+<br class="clear" />
+
+<footer>
+	<small>Copyright &copy; 2017 - Roberto Pesce.</small>
+	<% if user_signed_in? %>
+		<small><%= link_to "Logout", destroy_user_session_path, method: :delete %></small>
+	<% end %>
+
+
+
+	
+</footer>
