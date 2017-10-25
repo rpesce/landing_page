@@ -29,6 +29,9 @@ class EmailsController < ApplicationController
 
     respond_to do |format|
       if @email.save
+        
+        EmailsMailer.welcome_email(@email).deliver_later
+
         format.html { render :new, notice: 'Contato recebido com sucesso! Em breve você receberá um email com mais informações.' }
         format.json { render :index, status: :created, location: @email }
       else
