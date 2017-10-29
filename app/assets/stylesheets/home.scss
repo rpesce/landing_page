@@ -1,701 +1,173 @@
+/* CSS RESETS
+------------------------------------------------------------ */
+  html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figcaption,figure,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {margin: 0; padding: 0; border: 0; vertical-align: baseline; font-size: 100%;}
+  article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  	display: block;
+  }
+
+  body {
+  	line-height: 1;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+  
+  ol,ul {
+  	list-style: none;
+  }
+      
+  img {
+  	vertical-align: middle;
+  }
+
+
 /* COMMON SETTINGS */
 
 * {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
-	font-family: 'proxima-nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: 'Montserrat', Helvetica, sans-serif;
 	transition: color .15s linear, position .15s linear, background-color .15s linear, opacity .15s linear;
 	-webkit-transition: color .15s linear, position .15s linear, background-color .15s linear, opacity .15s linear;
 }
 
-body {
-	background-color: #fff;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
-}
-
-header {
-	width: 70% !important;
-	text-align: left;
-	margin-top: 6em !important;
-}
-
-.wrapper {
-	width: 100%;
-	max-width: 1800px;
-	margin: 0 auto;
-}
-
 .clear {
 	clear: both;
-	display: none;
 }
 
-.width-center-wrap {
-	text-align: center;
-	width: 70% !important;
-	margin: auto;
+.container {
+	margin: auto 10vw;
 }
 
-a {
-  color: #56BF81;
+/* NAVBAR */
 
-  &:visited {
-    color: #666;
-  }
-
-  &:hover {
-    color: #666;
-  }
+.nav-menu{
+  letter-spacing: 0.1vw;
+  position: relative;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
-#error_explanation {
-  width: 450px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 0;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-
-  h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px;
-    margin-bottom: 0;
-    background-color: #c00;
-    color: #fff;
-  }
-
-  ul li {
-    font-size: 12px;
-    list-style: square;
-  }
+.logo {
+	margin: auto 3vw;
 }
 
-div {
-  &.field, &.actions {
-    margin-bottom: 10px;
-  }
+.pesce {
+	color: #4E7CC3;
 }
 
-#notice {
-  color: green;
+.nav-menu ul{
+  display: inline-flex;
+  max-width: 100%;
+  justify-content: flex-end;
+  align-items: right;
+  list-style-type: none;
 }
 
-/* HEADER */
-
-header h1 {
-	color: #56BF81;
-	font-size: 4em;
-	font-weight: 600;
-	letter-spacing: .03em;
-	line-height: 1em;
+.nav-menu .cl-effect-1 a {
+  padding-bottom: 0.5em;
+  margin: 0 2em;
+  display: inline-block;
+  color: #575757;
+  -webkit-transition: color .3s;
+  -moz-transition:    color .3s;
+  -ms-transition:     color .3s;
+  -o-transition:      color .3s;
+  transition:         color .3s;
 }
 
-header p {
-	font-size: 1.5em;
-	margin-left: 0 !important;
-	color: #4B4B4B;
-	line-height: 1.6em;
-	letter-spacing: 0.04em;
+.nav-menu .cl-effect-1 a:hover{
+  color: #575757;
 }
 
-header p a {
-	border-bottom: 1px solid #ddd;
+.buttons{
+  -webkit-transition: all .3s;
+}
+
+.buttons:hover{
+  opacity:.7;
+  -webkit-transition: all .3s;
+}
+
+.buttons:visited{
+	color: #575757;
 }
 
 
-/* SECTION - VIDEO */
-
-.video {
-	margin-top: 6em;
-	padding: 3em 0;
-	background-color: #56BF81;
-}
-
-.video h3 {
-	color: #fff;
-	font-size: 2em;
-	font-weight: 650;
-	line-height: 1.2em;
-	letter-spacing: 0.03em;
-
-}
-
-.video p {
-	margin: 1.2em 0 0 0;
-	font-size: 1em;
-	color: #fff;
-	line-height: 1.4em;
-	letter-spacing: 0.03em;
-}
-
-iframe {
-	padding: .5em;
-	margin: 2em auto;
-	margin-bottom: 1em;
-	border: none;
-	background-color: #fff;
-	border-radius: 5px;
-}
-
-.video a {
-	font-size: 0.8em;
-	color: #fff;
-	text-decoration: underline;
-}
-
-
-/* SECTION - FORM */
-
-.form {
-	padding: 2em 0;
-}
-
-.form h3 {
-	color: #56BF81;
-	font-size: 2em;
-	margin-bottom: .1em;
-	font-weight: 600;
-	line-height: 1.2em;
-	letter-spacing: 0.03em;
-}
-
-
-.form p {
-	font-weight: 400;
-	margin: 1em 0 0 0;
-	font-size: 1.5em;
-	color: #4b4b4b;
-	line-height: 1.4em;
-	letter-spacing: 0.03em;
-}
-
-.formulario {
-	margin-top: 1em;
-	padding: 1em 0;
-	width: 100%;
-	display: inline-block;
-}
-
-#nome {
-	border: 1px solid #d6d6d6;
-	border-radius: 3px;
-	padding: 1em .5em;
-	width: 35%;
-}
-
-#nome::placeholder {
-	color: #a3a3a3;
-}
-
-#email {
-	border: 1px solid #d6d6d6;
-	border-radius: 3px;
-	padding: 1em .5em;
-	width: 35%;
-}
-
-#email::placeholder {
-	color: #a3a3a3;
-}
-
-.botao {
-	color: #fff;
-	font-weight: 500;
-	border: 1px solid #FCAA00;
-	background-color: #FCAA00;
-	border-radius: 3px;
-	padding: 1em .5em;
-	width: 20%;
-
-	&:hover {
-		;
-		background-color: #FCCC33;	
-		border: 1px solid #FCCC33;
-		color: #666;
-	}
-}
-
-
-/* SECTION - SOBRE-ROBERTO */
-
-.sobre-roberto {
-	padding: 4em 0;
-	background-color: #56BF81;
-	/*border: 1px solid black;*/
-
-}
-
-.bloco {
-	position: relative;
-	display: -webkit-flex;
-	display: flex;
-	width: 80%;
-	margin: auto;
-	/*border: 1px solid black;*/
-}
-
-.flex {
-	width: 20%;
-	padding: 0 2em;
-	margin: auto;
-	margin-top: 0 !important;
-	text-align: left;
-}
-
-.flex2 {	
-	width: 70%;
-	padding-top: 0 !important;
-	margin: auto;
-	margin-top: 0 !important;
-	/*border: 1px solid red;*/
-}
-
-.sobre-roberto hr {
-	margin-bottom: 1em;
-	height: .3em;
-	border-width: 0;
-	color: white;
-	background-color: white;
-}
-
-.sobre-roberto h4 {
-	text-align: left;
-	color: #fff;
-	font-size: 2em;
-	line-height: 1.1em;
-	margin-bottom: 1em;
-	font-weight: 500;
-}
-
-.sobre-roberto p {
-	margin: auto !important;
-	padding: 0 !important;
-	text-align: left;
-	font-size: 1.1em;
-	line-height: 1.5em;
-	color: #fff;
-	/*border: 1px solid yellow;*/
-
-}
-
-.img-size {
-	display: block;
-	max-width: 5.2em;
-	width: 100%;
-	padding: .3em 0;
-}
-
-
-/* SECTION - PROJETOS */
-
-.square {
-	width: 33.33%;
-	display: inline-block;
-	margin: 0 0 -0.4em 0 !important;
-	padding: 0 !important;	
-	z-index: -1;
-}
-
-.change {
-	background-color: green;
-	z-index: 1;
-}
-
-
-/* SECTION - SOBRE-DESIGN */
-
-.sobre-design {
-	padding: 2em 0;
-	background-color: #56BF81;
-	/*border: 1px solid black;*/
-
-}
-
-.bloco {
-	position: relative;
-	display: -webkit-flex;
-	display: flex;
-	width: 80%;
-	margin: auto;
-	/*border: 1px solid black;*/
-}
-
-.flex {
-	width: 20%;
-	padding: 0 2em;
-	margin: auto;
-	margin-top: 0 !important;
-	/*border: 1px solid white;*/
-}
-
-.flex2 {	
-	width: 70%;
-	padding-top: 0 !important;
-	margin: auto;
-	margin-top: 0 !important;
-	/*border: 1px solid red;*/
-}
-
-.sobre-design hr {
-	margin-bottom: 2em;
-	height: .3em;
-	border-width: 0;
-	color: white;
-	background-color: white;
-}
-
-.sobre-design h4 {
-	text-align: left;
-	color: #fff;
-	font-size: 2em;
-	line-height: 1.1em;
-	margin-bottom: 1em;
-	font-weight: 500;
-}
-
-.sobre-design p {
-	
-	margin: auto !important;
-	padding: 0 !important;
-	text-align: left;
-	font-size: 1.1em;
-	line-height: 1.5em;
-	color: #fff;
-}
-
-.sobre-design ul {
-	list-style-type: none;
-	margin-top: 1em;
-	margin-left: 0 !important;
-	padding: 0;
-	text-transform: uppercase;
-	color: #fff;
-	text-align: left;
-}
-
-.sobre-design li {
-	margin: 0 0;
-	padding: .2em 0;
-}
-
-.sobre-design a {
-  text-decoration: underline;
-  color: #fff;
-
-  &:visited {
-    color: #fff;
-  }
-
-  &:hover {
-    color: #666;
-    text-decoration: underline;
-  }
-}
-
-
-/* FOOTER */
-
-footer {
-	margin: 2em auto;
-	text-align: center;
-}
-
-
-/* BLOCK MEDIA SCREEN */
-
-
-@media all and (max-width: 1100px) {
-
-	/*HEADER*/
-	header h1 {
-		font-size: 3.8em;
-		font-weight: 600;
+	/* UNDERLINE EFFECT */
+	.cl-effect-1 a {
+	  display: inline-block;
+	  position: relative;
 	}
 
-	header p {
-		font-size: 1.4em;
-		line-height: 1.5em;
+	.cl-effect-1 a:after {
+	  content: '';
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  height: 0px;
+	  width: 100%;
+	  background: transparent;
+	  -webkit-transition: all ease-in-out 0.3s;
+	  -moz-transition: all ease-in-out 0.3s;
+	  transition: all ease-in-out 0.3s;
 	}
 
-	/*VIDEO*/
-
-	.video h3 {
-		font-size: 1.7em;
-	}
-
-	.video p {
-		margin: 1em 0 0 0;
-	}
-
-	iframe {
-		max-width: 1100px;
-		width: 80%;
-	}
-
-	/*FORM*/
-
-	.form h3 {
-		font-size: 1.7em;
-	}
-
-	.form p {
-		margin: 1em 0 0 0;
-		font-size: 1.3em;
-	}
-
-	.formulario {
-		margin-top: 0.2em;
-	}
-
-}
-
-
-@media all and (max-width: 960px) {
-
-	/*HEADER*/
-	header h1 {
-		font-size: 3.5em;
-		font-weight: 600;
-	}
-
-	header p {
-		font-size: 1.2em;
-		line-height: 1.4em;
-	}
-
-	/*VIDEO*/
-
-	.video h3 {
-		font-size: 1.5em;
-	}
-
-	.video p {
-		font-size: 0.9em;
-		margin: 1em 0 0 0;
-	}
-
-	iframe {
-		max-width: 1100px;
-		width: 80%;
-	}
-
-	/*FORM*/
-
-	.form h3 {
-		font-size: 1.5em;
-	}
-
-	.form p {
-		margin: 1em 0 0 0;
-		font-size: 1.2em;
+	.cl-effect-1 a:hover:after {
+	  height: 3.5px;
+	  background: #4E7CC3;
 	}
 
 
-	/*SOBRE-ROBERTO*/
+	/*FADE IN*/
 
-	.sobre-roberto hr {
-		height: .2em;
+	@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+	@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+	.fade-in {
+	  opacity:0;  /* make things invisible upon start */
+	  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	  -moz-animation:fadeIn ease-in 1;
+	  animation:fadeIn ease-in 1;
+
+	  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	  -moz-animation-fill-mode:forwards;
+	  animation-fill-mode:forwards;
+
+	  -webkit-animation-duration:0.5s;
+	  -moz-animation-duration:0.5s;
+	  animation-duration:0.5s;
+
+	  -webkit-animation-delay: 0s;
+	  -moz-animation-delay: 0s;
+	  animation-delay: 0s;
+	  text-align: center;
 	}
 
-	.sobre-roberto h4 {
-		font-size: 1.8em;
-		line-height: 1.1em;
+	.fade-in.one {
+	  -webkit-animation-delay: 0.2s;
+	  -moz-animation-delay: 0.2s;
+	  animation-delay: 0.2s;
 	}
 
-	.sobre-roberto p {
-		font-size: 1em;
-		line-height: 1.5em;
+	.fade-in.two {
+	  -webkit-animation-delay: 0.3s;
+	  -moz-animation-delay:0.3s;
+	  animation-delay: 0.3s;
 	}
 
-	/* SECTION - PROJETOS*/
-
-	.square {
-		width: 50%;
+	.fade-in.three {
+	  -webkit-animation-delay: 0.4s;
+	  -moz-animation-delay: 0.4s;
+	  animation-delay: 0.4s;
 	}
 
-	/*SOBRE-DESIGN*/
-
-	.sobre-design hr {
-		height: .2em;
+	.fade-in.four {
+	  -webkit-animation-delay: 0.5s;
+	  -moz-animation-delay: 0.5s;
+	  animation-delay: 0.5s;
 	}
 
-	.sobre-design h4 {
-		font-size: 1.8em;
-		line-height: 1.1em;
-	}
 
-	.sobre-design p {
-		font-size: 1em;
-		line-height: 1.5em;
-	}
-}
-
-
-@media all and (max-width: 850px) {
-
-	header {
-		width: 80% !important;
-	}
-
-	.width-center-wrap {
-		width: 80% !important;
-	}
-
-	/*HEADER*/
-
-	header h1 {
-		font-size: 3em;
-	}
-
-	header p {
-		font-size: 1.1em;
-		line-height: 1.6em;
-	}	
-
-	/*VIDEO*/
-
-
-	.video h3 {
-		font-size: 1.4em;
-		line-height: 1.4em;
-
-	}
-
-	.video p {
-		font-size: 0.9em;
-	}
-
-	.video a {
-		font-size: 0.8em;
-		letter-spacing: .04em;
-	}
-
-	/*FORM*/
-
-	.form h3 {
-		font-size: 1.3em;
-	}
-
-	.form p {
-		font-size: 1.1em;
-	}
-
-	#nome {
-		width: 46%;
-	}
-
-	#email {
-		width: 46%;
-	}
-
-	.botao {
-		margin-top: 0.7em;
-		width: 80%;
-	}
-
-	/*SOBRE-ROBERTO*/
-
-	.sobre-roberto h4 {
-		font-size: 1.4em;
-	}
-
-	/*SOBRE-DESIGN*/
-
-	.sobre-design h4 {
-		font-size: 1.4em;
-	}
-}
-
-@media all and (max-width: 600px) {
-	
-	/*VIDEO*/
-
-	.video h3 {
-		font-size: 1.3em;
-		line-height: 1.25em;
-
-	}
-
-	.video p {
-		font-size: 0.9em;
-	}
-
-	.video a {
-		font-size: 0.8em;
-		letter-spacing: .04em;
-	}
-
-	/*FORM*/
-
-	.form h3 {
-		font-size: 1.3em;
-	}
-
-	.form p {
-		font-size: 0.9em;
-	}
-
-	#nome {
-		width: 100%;
-		margin-top: 0.7em;
-	}
-
-	#email {
-		width: 100%;
-		margin-top: 0.7em;
-	}
-
-	/*SOBRE-ROBERTO */
-
-	.bloco {
-		display: block;
-	}
-
-	.flex {
-		width: 100%;
-		text-align: center;
-		padding: 0 !important;
-	}
-
-	.flex2 {	
-		width: 100%;
-	}
-
-	.sobre-roberto h4 {
-		text-align: left;
-		font-size: 1.4em;
-		line-height: 1.1em;
-		margin-bottom: 1em;
-		font-weight: 500;
-	}
-
-	.sobre-roberto p {
-		font-size: 0.9em;
-		line-height: 1.6em;
-		letter-spacing: .035em;
-		/*border: 1px solid yellow;*/
-
-	}
-
-	.img-size {
-		display: none;
-	}
-
-	/*PROJETOS*/
-
-	.square {
-		width: 100%;
-		display: block;
-	}
-
-	/*SOBRE-DESIGN*/
-
-	.sobre-design h4 {
-		font-size: 1.4em;
-	}
-}

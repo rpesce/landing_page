@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <title>Roberto Pesce | UX Designer | About Users</title>
+    <title>Roberto Pesce | Product Designer | UX Designer | About Users</title>
+
+    <meta name="description" content="Roberto Pesce is a Product Designer and User Experience Designer with over six years of experience working with interaction design and Product Development currently living in Rotterdam, Netherlands. It's all About Users." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    <meta name="description" content="Roberto Pesce is a UX Designer, usability specialist living in San Diego, CA." />
-    <meta name="viewport" content="width=380, user-scalable=no" />
-
     <%= csrf_meta_tags %>
-
+    <%= stylesheet_link_tag 'application', 'http://fonts.googleapis.com/css?family=Montserrat:700|Lato:400',
+                            type: 'text/css' %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <%= render 'layouts/navbar' %>
     <div class="container">
       <%= yield %>
     </div>
+    <%= render 'layouts/footer' %>
   </body>
 </html>

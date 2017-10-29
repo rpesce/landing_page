@@ -1,0 +1,44 @@
+<div class="nav-menu">
+	<div class="fade-in logo">
+		<%= link_to root_path, class: 'buttons' do %>
+			Roberto<span class="pesce"> Pesce</span>
+		<% end %>			
+	</div>
+	<ul>
+		<li class="fade-in one">
+			<section>
+				<nav class="cl-effect-1">
+  					<%= link_to "ABOUT", about_path %>
+				</nav>
+			</section>
+		</li>
+		<li class="fade-in two">
+			<section>
+				<nav class="cl-effect-1">
+					<%= link_to "PORTFOLIO", portfolio_path %>
+				</nav>
+			</section>
+		</li>
+		<li class="fade-in three">
+			<section>
+				<nav class="cl-effect-1">
+					<%= link_to "CV", asset_path("Product_Design.pdf"), :target => "_blank" %>
+				</nav>
+			</section>
+		</li>
+		<li class="fade-in four">
+			<section>
+				<nav class="cl-effect-1">
+					<%= link_to "ARTICLES", "http://medium.com/@robertopesce", :target => "_blank" %>
+				</nav>
+			</section>
+		</li>
+		<li class="fade-in five">
+			<section>
+				<nav class="cl-effect-1">
+					<%= link_to "TIPS", tips_path %>
+				</nav>
+			</section>
+		</li>
+	</ul>
+</div>
