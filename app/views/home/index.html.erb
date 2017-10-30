@@ -1,13 +1,45 @@
-<p id="notice"><%= notice %></p>
+<div class="home">
+	<h1>Hi, I’m Roberto.</h1>
+	<h2>Product Designer · UX Designer</h2>
+		
+	<div class="social">
+		<ul>
+			<li><%= link_to "https://www.linkedin.com/in/roberto-pesce-jr-00746249/", target: '_blank' do %>
+					<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+				<% end %>
+			</li>
+			<li><%= link_to "https://www.behance.net/robertopesce", target: '_blank' do %>
+					<i class="fa fa-behance-square" aria-hidden="true"></i>
+				<% end %>
+			</li>
+			<li><%= link_to "https://github.com/rpesce", target: '_blank' do %>
+					<i class="fa fa-github" aria-hidden="true"></i>
+				<% end %>
+			</li>
+			<li><%= link_to "https://medium.com/@robertopesce", target: '_blank' do %>
+					<i class="fa fa-medium" aria-hidden="true"></i>
+				<% end %>
+			</li>
+			<li>
+				<%= mail_to "robertopescee@gmail.com", subject: "Contact from AboutUsers.com" do %>
+					<i class="fa fa-envelope envelope-color" aria-hidden="true"></i>
+				<%end%>	
+			</li>
+		</ul>
+	</div>
+	<div class="brief_description">
+		<p> 
+			I’m a Brazilian/Italian Product Designer with a generalist background and 6+ years of experience working with Product Development. I started my career on the business side and thrived my way into the Design field by learning through my own curiosity and experiences. I believe in the User-Centered approach as the baseline for successful products and strongly advocate for users in order to build meaningful solutions. 
+		</p>
+		<p class="caption">
+			In other words, I believe that it’s all About Users.
+		</p>
+		<p>
+			I’m currently based in Rotterdam, Netherlands. <%= mail_to "robertopescee@gmail.com", subject: "Contact from AboutUsers.com", class: "get_in_touch" do %>
+					Get in touch!
+				<%end%>
+		</p>
+	</div>
 
-<header class="wrapper">
-	<h1>Roberto Pesce</h1>
-	<p> 
-		Product Designer with 6+ years of experience working along with product engineering and software engineering in product development projects with multi-functional teams. 
-		<br />Currently living in Amsterdam, Netherlands. 
-		<i class="fa fa-facebook-official" aria-hidden="true"></i>
-		<i class="fa fa-medium" aria-hidden="true"></i>
-	</p>
-</header>
-
-<br class="clear" />
+	<br class="clear" />
+</div>
