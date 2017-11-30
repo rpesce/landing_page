@@ -7,7 +7,12 @@
 /*HEADER*/
 
 .head{
-	background-image: path-url(<%= asset_path 'Brazuka_Cover.jpg' %>);
+	background-image: url(image_path('Brazuka_Cover.jpg'));
+	background-image: image-url('../assets/Brazuka_Cover.jpg');
+	background-image: path-url('../assets/Brazuka_Cover.jpg');
+	background-image: path-url('/assets/Brazuka_Cover.jpg');
+	background-image: image-url('/assets/Brazuka_Cover.jpg');
+	background-image: url(<%= asset_path 'Brazuka_Cover.jpg' %>);
     background-size: cover;
 	background-repeat:no-repeat;
 	background-position:0 0;
@@ -146,7 +151,7 @@
 
 /*HOW MIGHT WE*/
 .hmw {
-	background-image: image-url('hmw_background.jpg');
+	background-image: url('hmw_background.jpg');
 	background-repeat:no-repeat;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 -4px 20px 0 rgba(0, 0, 0, 0.19);
 }
