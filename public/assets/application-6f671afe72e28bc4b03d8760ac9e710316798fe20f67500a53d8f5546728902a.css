@@ -8,7 +8,7 @@
 /*HEADER*/
 /* line 9, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/brazuka.css.scss */
 .head {
-  background-image: "/assets/Brazuka_Cover-74ae8469ebd98a2fe701cd7ea14da9bbc20a4cc9115419244d9461e07bb5aa3b.jpg";
+  background-image: url(/assets/Brazuka_Cover-74ae8469ebd98a2fe701cd7ea14da9bbc20a4cc9115419244d9461e07bb5aa3b.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -166,7 +166,7 @@
 /*HOW MIGHT WE*/
 /* line 148, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/brazuka.css.scss */
 .hmw {
-  background-image: url("hmw_background.jpg");
+  background-image: url(/assets/hmw_background-fd36668fbe1009242f3d2a27df35c40cbaf15219fe6cdb573fb7205d251d7e6d.jpg);
   background-repeat: no-repeat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 -4px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -334,7 +334,7 @@
 /*SEPARATOR*/
 /* line 299, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/brazuka.css.scss */
 .separator__div--size1 {
-  background-image: url("Process_background.jpg");
+  background-image: url(/assets/Process_background-d2eadb60f52a8bd4bb68410c53eb5e2435c63c86c13de154ba390667c9c857e2.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -344,7 +344,7 @@
 
 /* line 308, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/brazuka.css.scss */
 .separator__div--size2 {
-  background-image: url("FlowChart.jpg");
+  background-image: url(/assets/FlowChart-39891d33b9ee2964d2448af2892bb8d38b3d0aa0351adf87c05b8b3b0ac41916.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -354,7 +354,7 @@
 
 /* line 317, /Users/RPesce/landing_page/landing_page/app/assets/stylesheets/brazuka.css.scss */
 .separator__div--size3 {
-  background-image: url("prototype_background.jpg");
+  background-image: url(/assets/prototype_background-221df80e6c99b54550d78bdfdc3274fc72548d61a87b52a52e8c0b55460ea832.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
