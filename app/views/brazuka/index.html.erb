@@ -1,6 +1,11 @@
 <!-- DEVELOPED BY ROBERTO PESCE 2017 -->
-
 <div class="wrap">
+
+	<div class="header__wrapper">
+		<h1 class="heading heading--caps heading--logo">
+			<%= link_to "BACK to main page", root_path, class: "js-link-nav" %>
+		</h1>
+	</div>
 	
 	<!-- Header -->
 	<header class='head'>
@@ -73,7 +78,7 @@
 			<p>
 				The clients were my first source for information. I extracted as more data as possible from them by adopting ludic excercises with drawings and post-it notes. The goal was to access their subconscient and build up a Value Proposition Canvas considering their current knowledge about the product and potential users. For this workshop I requested them to write one post-it note for each task their users were trying to accomplish, then to draw their perception of users’ pains. By the end of 4 hours we had built a VPC and a great big picture of the project goals.
 			</p>
-			<p>
+			<p class="research__p--position">
 				The second step was to research on secondary sources and to reach out to real users starting to give a user-centered approach to the project. We interviewed and observed over 10 potential users while they were looking for Brazilian events, validating assumptions and uncovering other hidden needs.
 			</p>
 			
@@ -132,10 +137,10 @@
 					Designing is creating, but is also failing and learning fast. After researching for references and a hard work creating and testing alternatives we came up with what we believe to be the best information architecture and user-flow. Below the main screens and interactions are shown in an annotated wireframe similar to the one approved byt he client.
 				</p>
 				<div class="design__images">
-					<%= image_tag('wireframe_1.png') %>
-					<%= image_tag('wireframe_2.png') %>
-					<%= image_tag('wireframe_3.png') %>
-					<%= image_tag('wireframe_4.png') %>
+					<%= image_tag('wireframe_1.png', class: "design__images--position") %>
+					<%= image_tag('wireframe_2.png', class: "design__images--position") %>
+					<%= image_tag('wireframe_3.png', class: "design__images--position") %>
+					<%= image_tag('wireframe_4.png', class: "design__images--position") %>
 				</div>
 			</section>
 		</div>
@@ -220,6 +225,11 @@
 		</div>-->
 
 	<footer>
+		<div class="header__wrapper">
+		<h1 class="heading heading--caps heading--logo">
+			<%= link_to "BACK to main page", root_path, class: "js-link-nav" %>
+		</h1>
+	</div>
 		<p>2017 - Roberto Pesce</p>
 	</footer>
 </div>
