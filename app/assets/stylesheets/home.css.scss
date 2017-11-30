@@ -92,6 +92,10 @@ ol{
 	margin:0 auto;
 }
 
+.bold {
+	font-weight: 700;
+}
+
 .grid:after{
 	content:'';
 	display:table;
@@ -593,7 +597,7 @@ ol{
 
 .navigation a{
 	color:#A8B7B4;
-	opacity:0.4;
+	opacity:0.8;
 }
 
 .navigation a:hover,.navigation a:focus{
