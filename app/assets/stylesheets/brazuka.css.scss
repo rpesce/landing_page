@@ -7,12 +7,7 @@
 /*HEADER*/
 
 .head{
-	background-image: url(image_path('Brazuka_Cover.jpg'));
-	background-image: image-url('../assets/Brazuka_Cover.jpg');
-	background-image: path-url('../assets/Brazuka_Cover.jpg');
-	background-image: path-url('/assets/Brazuka_Cover.jpg');
-	background-image: image-url('/assets/Brazuka_Cover.jpg');
-	background-image: url(<%= asset_path 'Brazuka_Cover.jpg' %>);
+	background-image: image-path("Brazuka_Cover.jpg");
     background-size: cover;
 	background-repeat:no-repeat;
 	background-position:0 0;
