@@ -7,7 +7,7 @@
 /*HEADER*/
 
 .head{
-	background-image: image-path("Brazuka_Cover.jpg");
+	background-image: image-url("Brazuka_Cover.jpg");
     background-size: cover;
 	background-repeat:no-repeat;
 	background-position:0 0;
@@ -146,7 +146,7 @@
 
 /*HOW MIGHT WE*/
 .hmw {
-	background-image: url('hmw_background.jpg');
+	background-image: image-url("hmw_background.jpg");
 	background-repeat:no-repeat;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.19), 0 -4px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -297,7 +297,7 @@
 
 /*SEPARATOR*/
 .separator__div--size1{
-	background-image: url('Process_background.jpg');
+	background-image: image-url("Process_background.jpg");
 	background-attachment: fixed;
 	background-repeat:no-repeat;
 	background-size: cover;
@@ -306,7 +306,7 @@
 }
 
 .separator__div--size2{
-	background-image: url('FlowChart.jpg');
+	background-image: image-url("FlowChart.jpg");
 	background-attachment: fixed;
 	background-repeat:no-repeat;
 	background-size: cover;
@@ -315,7 +315,7 @@
 }
 
 .separator__div--size3{
-	background-image: url('prototype_background.jpg');
+	background-image: image-url("prototype_background.jpg");
 	background-attachment: fixed;
 	background-repeat:no-repeat;
 	background-size: cover;
